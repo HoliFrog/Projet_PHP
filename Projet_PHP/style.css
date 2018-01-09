@@ -1,0 +1,175 @@
+body{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.big-wraper{
+  height: 900px;
+  width: 700px;
+  margin: auto;
+  background-color: #659999;
+  border: 1px solid white;
+  color:white;
+  margin-top: 100px;
+}
+.info{
+  color:black;
+  font-size: 150%;
+
+
+}
+p{
+  margin-bottom: 5px;
+}
+svg{
+  fill:white;
+}
+.selection{
+  width: 500px;
+  margin: auto;
+}
+.button_coins{
+  border-radius: 50%;
+  height: 50px;
+}
+.coins{
+  margin: 50px 100px 50px 70px;
+
+}
+.price{
+  margin: 50px;
+  height: 150px;
+  padding-left: 20px;
+  border: 1px solid white;
+}
+.led-drink{
+  width: 30px;
+  height: 30px;
+  background-color: black;
+  border-radius: 50%;
+  margin-left: 20px;
+}
+.sugar{
+  display: flex;
+  flex-direction: row;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.drink{
+  display: flex;
+  flex-direction: row;
+  margin: 20px;
+  text-align: center;
+  margin-left: 70px;
+}
+.sugar .button{
+  border-radius: 50%;
+  padding: 10px;
+  margin-bottom: 10px;
+  margin-top: -10px;
+  margin-left: 30px;
+}
+.button{
+  height: 40px;
+  width: 40px;
+  border: 1px solid white;
+  margin-left: 45px;
+  text-align: center;
+}
+.drink-name{
+  min-width: 100px;
+  border:0.5px solid white;
+  padding-top: 10px;
+}
+.led-on {
+
+    background-color: #690;
+    border-radius: 50%;
+
+
+}
+
+.led-off {
+
+    background-color: white;
+    border-radius: 50%;
+}
+.rs-button{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.btn{
+  margin: 10px;
+  width: 100px;
+}
+.cup-sortir{
+  display: none;
+  height: 200px;
+  width: 200px;
+  border: 1px solid white;
+  padding: 10px;
+  margin-left: 50px;
+  border-radius: 50%;
+  margin-top: -50px;
+  text-align: center;
+  padding-top: 20px;
+}
+.piece{
+  color: black;
+  width: 60px;
+  height: 50px;
+}
+.stock:first-of-type{
+  padding-top: 100px;
+}
+.stock{
+  padding-right: 100px;
+  display: flex;
+  flex-direction: row;
+
+}
+.drink-stock{
+  height: 10px;
+  width: 200px;
+  background-color: black;
+
+}
+.drink-level{
+  height: 10px;
+  width: 0px;
+  background-color: red;
+}
+.stock > p  {
+  margin-right: 20px;
+}
+
+
+.c0, .c1, .c2, .c3, .c4, .c5 {
+  max-width: 50%;
+  background-color: #333;
+}
+
+table
+
+{
+
+    border-collapse: collapse; /* Les bordures du tableau seront collées (plus joli) */
+     border: 5px solid black;
+}
+
+td
+
+{
+
+    border: 5px solid black;
+    min-width: 150px;
+    min-height: 40px;
+
+}
+th, tr{
+  border: 5px solid black;
+  border: 5px solid black;
+    min-width: 150px;
+    min-height: 40px;
+}
