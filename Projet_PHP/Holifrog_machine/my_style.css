@@ -1,0 +1,107 @@
+/*html, body {
+  background-image: url(images/bg.jpg);
+  background-repeat: repeat-y;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 100;
+  height: 100vh;
+  margin: 0;
+}
+
+.price{
+  background-color: #7e8c74;
+  width:80px;
+  height:30px;
+  position: absolute;
+  top:20px;
+  left : 30px;
+}
+
+.euros{
+  content: url(images/euros.jpg);
+  width:79px;
+  height:85px;
+  position: absolute;
+  top:80px;
+  left:10px;
+}
+
+.coinsSlot{
+  content: url(images/coinsSlot.jpg);
+  width:79px;
+  height:85px;
+  position: absolute;
+  top:80px;
+  left:95px;
+}
+
+.drink{
+  position:absolute;
+
+  left:0px;
+  width:100px;
+  height:30px;
+}
+
+.sugar{
+  position:absolute;
+  left:0px;
+  width:100px;
+  height:30px;
+}
+
+.drink-name
+{
+  position:absolute;
+  background-color: #4e4138;
+  top:0px;
+  left:10px;
+  width:110px;
+  height:25px;
+}
+
+.button
+{
+  content: url(images/button.png);
+  width:25px;
+  height:26px;
+  position: absolute;
+  top:0px;
+  left:150px;
+
+}
+
+.led-on {
+    position:absolute;
+		margin: 15px 6px;
+    width: 7px;
+    height: 7px;
+    background-color: #690;
+    border-radius: 50%;
+    box-shadow: #000 0 -1px 7px 1px, inset #460 0 -1px 9px, #7D0 0 2px 12px;
+
+}
+
+.led-off {
+    position:absolute;
+		margin: 15px 6px;
+    width: 7px;
+    height: 7px;
+    background-color: #333;
+    border-radius: 50%;
+    box-shadow: #000 0 -1px 7px 1px, inset #230 0 -1px 9px, #230 0 2px 12px;
+
+}
+
+td{
+  display: flex;
+}
+.coins{
+  margin-top: 350px;
+  display: flex;
+  flex-direction: column;
+  max-width: 50px;*/
+}
+.c0, .c1, .c2, .c3, .c4, .c5 {
+  max-width: 50%;
+  background-color: #333;
+}
