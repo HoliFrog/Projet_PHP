@@ -38,7 +38,7 @@ function createButton ($database){
 	while ($donnees =$raiponce->fetch()) {
 		$don = intval($donnees['Dispo']);
 		if ($don===1) {
-			$listButton .= '<input type="radio" name="boisson" value='.$donnees["id"].'><label>'.$donnees["name"].'</label>';
+			$listButton .= '<input type="radio" name="boisson" value='.($donnees['id']).'><label>'.$donnees["name"].'</label>';
 		}
 		else {
 			$listButton .= '<input disabled type="radio" name="boisson" value='.$donnees["id"].'><label>'.$donnees["name"].'</label>';
@@ -94,5 +94,25 @@ function removeIngredientStock ($database,$ingredientName,$qteIngredient){
 
 	$preparedStringQuery2->execute(array('quantiteAMettre2' => $stockIngredient,'nomAMettre'=> $ingredientName));
 }	
-removeIngredientStock($machinecaf,'I_café',10);
+//removeIngredientStock($machinecaf,'I_café',10);
+
+function GetRecette($database,$boissonId){
+
+	$recette = [];
+
+	$recetteQuery = $database->prepare("SELECT boissons.name,ingredients.name, recettes.quantite 
+	FROM ingredients, recettes, boissons
+	WHERE boissons.id like :IdAMettre AND boissons.id= recettes.boissons_id 
+	and recettes.ingredients_id=ingredients.id;");
+	
+	$recetteQuery->execute(array('IdAMettre'=>$boissonId));
+
+	while ($ligneDuTableau = $recetteQuery->fetch()) {
+
+		$recette[$ligneDuTableau['name']]= intval($ligneDuTableau['quantite']);
+
+	}
+	return($recette);
+}
+var_dump(GetRecette($machinecaf,5));
 ?>

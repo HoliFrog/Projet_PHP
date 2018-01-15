@@ -36,5 +36,5 @@ afficheIngredients($machinecaf);
 
 
 ?>
-<a href="bdd_lecture_test">Frontend de la machine</a> 
+<a href="bdd_lecture_test.php">Frontend de la machine</a> 
 </body>
